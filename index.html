@@ -26,8 +26,31 @@
                         <h6>Create New Task</h6>
                     </div>
                     <div class="card-body">
-                        <!-- TODO -->
-                    </div>
+<form id="create-task-form" class="mb-3">
+  <div class="mb-2">
+    <label class="form-label">Task Title</label>
+    <input type="text" id="task-title" class="form-control" required>
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Description</label>
+    <input type="text" id="task-desc" class="form-control">
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Due Date</label>
+    <input type="date" id="task-due-date" class="form-control" required>
+  </div>
+  <div class="mb-2">
+    <label class="form-label">Assign To</label>
+    <select id="task-assignee" class="form-select">
+      <option value="Person 1">Person 1</option>
+      <option value="Person 2">Person 2</option>
+      <option value="Person 3">Person 3</option>
+      <option value="Person 4">Person 4</option>
+      <option value="Person 5">Person 5</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary btn-sm">Add Task</button>
+</form>                    </div>
                 </div>
 
                 <!-- Task List -->
